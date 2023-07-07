@@ -1,0 +1,118 @@
+.headerPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*espacio entre los elementos*/
+}
+.headerPrincipal-nav {
+  display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /*espacio alrededor de los items*/
+  width: 70%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: column; /*coloca los elementos uno debajo de otro*/
+  height: 260px;
+  flex-wrap: wrap; /*cuando haya rellenado la altura que pase a la siguiente columna*/
+}
+
+.contenidoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+  display: flex;
+  width: 23%;
+}
+
+.videoSobre .container {
+  display: flex;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoSobre-video {
+  flex-grow: 2; /*hace crecer el tamaño del elemento*/
+  flex-shrink: 2;/*disminuye el tamaño del elemento*/
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 2;
+}
+
+/****************Responsive**************/
+
+@media screen and (max-width: 768px) {
+  .headerPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+
+  .headerPrincipal-nav {
+    flex-direction: column;
+  }
+
+  .contenidoPrincipal-cursos {
+    flex-direction: column;
+  }
+
+  .contenidoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  .headerPrincipal-nav-link-app {
+    order: -1; /*ordena los elementos a partir del 0*/
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+}
